@@ -1,0 +1,3 @@
+# Train
+python3 train.py -d datasets/ojo-seco-new/ -a mvtecCAE -b 8 -l l2 -c rgb -i
+
