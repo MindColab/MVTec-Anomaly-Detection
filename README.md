@@ -108,6 +108,19 @@ To train with your own dataset, you need to have a comparable directory structur
 
 --------
 
+### Preprocess ojo-seco
+
+```
+# ./../UBOT/dataset/train+5videos/good/: Here download all projects of normal eyes from CVAT in format Segmentation mask v 1.1
+# ../../UBOT/dataset/ojo_seco_sin_ruptura/: Here download all projects of anomaly eyes from CVAT in format Segmentation mask v 1.1
+python preprocess_rupturas_test.py -i ../../UBOT/dataset/train+5videos/ -o ./datasets/ojo-seco-new/test/
+python preprocess_rupturas_train.py -i ../../UBOT/dataset/ojo_seco_sin_ruptura/ -o ./datasets/ojo-seco-new/train/
+# Sample 109 good eyes for testing
+mkdir ./datasets/ojo-seco-new/test/good
+find ./datasets/ojo-seco-new/train/good/ -name "*.png" | shuf | head -n 109 | xargs -i mv {} ./datasets/ojo-seco-new/test/good/
+rm -rf ./datasets/ojo-seco-new/test/mask
+```
+
 ## Usage
 
 ### Training (`train.py`)
