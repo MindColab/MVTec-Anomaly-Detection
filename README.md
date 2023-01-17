@@ -114,7 +114,7 @@ To train with your own dataset, you need to have a comparable directory structur
 
 During training, the CAE trains exclusively on defect-free images and learns to reconstruct (predict) defect-free training samples.
 
-usage: train.py [-h] -d  [-a] [-c] [-l] [-b] [-i]
+usage: train.py [-h] -d  [-a] [-c] [-l] [-b] [-i] [-w]
 
 optional arguments:
 
@@ -131,6 +131,8 @@ optional arguments:
   -b , --batch          batch size to use for training
 
   -i, --inspect         generate inspection plots after training
+  
+  -w, --weights         path to model file initial weights
 
 
 Example usage:
