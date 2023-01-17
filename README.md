@@ -202,19 +202,3 @@ Project Organization
 
 
 --------
-
-## Authors
-
-* **Adnene Boumessouer** - https://github.com/AdneneBoumessouer
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* Paul Bergmann, Michael Fauser, David Sattlegger and Carsten Steger, the authors of the [MVTec paper](https://www.mvtec.com/fileadmin/Redaktion/mvtec.com/company/research/mvtec_ad.pdf) which this project has been inspired by.
-* François Chollet, author of [Keras](https://keras.io/).
-* Aurélien Géron, autor of the great book [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow, 2nd Edition](https://www.oreilly.com/library/view/hands-on-machine-learning/9781492032632/).
-* Arun S. Maiya, author of the [ktrain](https://github.com/amaiya/ktrain) deep learning library.
-* Adrian Rosebrock, founder of the website [pyimagesearch](https://www.pyimagesearch.com/) for computer vision.
