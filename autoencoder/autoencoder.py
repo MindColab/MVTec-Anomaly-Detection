@@ -169,6 +169,7 @@ class AutoEncoder:
         # compile model
         self.model.compile(
             loss=self.loss_function, optimizer="adam", metrics=self.metrics
+            #loss=tf.keras.losses.BinaryCrossentropy(), optimizer="adam", metrics=self.metrics
         )
         return
 
@@ -249,7 +250,7 @@ class AutoEncoder:
         checkpoint_best_path = f"{self.save_dir}/{self.architecture}_checkpoint_best_model.hdf5"
         checkpoint_last_path = f"{self.save_dir}/{self.architecture}_checkpoint_last_model.hdf5"
         checkpoint_best = keras.callbacks.ModelCheckpoint(checkpoint_best_path, save_best_only=True, period=5)
-        checkpoint_last = keras.callbacks.ModelCheckpoint(checkpoint_last_path, save_best_only=True, period=5)
+        checkpoint_last = keras.callbacks.ModelCheckpoint(checkpoint_last_path, save_best_only=False, period=1)
 
         # create tensorboard callback to monitor training
         tensorboard_cb = keras.callbacks.TensorBoard(

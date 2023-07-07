@@ -8,13 +8,13 @@ VAL_SPLIT = 0.1
 
 # Learning Rate Finder parameters
 # funciona START_LR = 2e-5
-START_LR = 2e-8
+START_LR = 2e-5
 LR_MAX_EPOCHS = 5
 LRF_DECREASE_FACTOR = 0.85
 
 # Training parameters
 #funciona EARLY_STOPPING = 20
-EARLY_STOPPING = 50
+EARLY_STOPPING = 25
 REDUCE_ON_PLATEAU = 6
 
 # Finetuning parameters
